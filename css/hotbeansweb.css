@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --headingfont: "Archivo Black", Serif;
+    --bodyfont: "Inter", Serif;
+    --blue: #318ee1;
+    --lightblue: #51a8f6;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: var(--bodyfont);
+    font-size: 28px;
+}
+
+/* . . . header and homepage header . . . */
+header {
+    background: var(--blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 28px;
+}
+
+nav.mainmenu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+nav.mainmenu ul a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+nav.mainmenu ul a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+nav a.active {
+    font-weight: bold;
+}
+
+div.headerbar {
+    display: flex;
+    flex-direction: row;
+    max-width: 1600px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body.home header {
+    background: var(--blue) no-repeat top right fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body.home nav.mainmenu ul {
+    margin: 0;
+    padding: 0 0 4rem 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+body.home nav.mainmenu ul a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+body.home nav.mainmenu ul a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+body.home div.headerbar {
+    display: flex;
+    flex-direction: column;
+    max-width: 1600px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+body.home h1 {
+    margin: 0;
+    padding: 0;
+}
+
+body.home div.menublock {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 2rem;
+}
+
+body.home h2 {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0;
+    padding: 6rem 0 0 0;
+    font-family: var(--headingfont);
+    color: white;
+    font-size: 144px;
+    align-items: center;
+}
+
+/* . . . Main . . . */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    max-width: 1600px;
+    width: 100%;
+    color: var(--blue);
+    font-family: var(--headingfont);
+    font-size: 40px;
+}
+
+div.row {
+    max-width: 1600px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* . . . Homepage . . . */
+figure {
+    margin: 0;
+}
+
+figure img {
+    display: block;
+}
+
+/* . . . Footer . . . */
+footer {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h5 img {
+    width: 180px;
+    height: auto;
+}
+
+div.footerbar {
+    display: flex;
+    flex-direction: row;
+    max-width: 1600px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+aside {
+    padding: 0.5rem 0 0 0.9rem;
+    font-size: 15px;
+}
+
+div.footmenublock {
+    font-size: 20px;
+    color: white;
+    padding: 0.5rem;
+}
+
+div.footerlogosocial {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+nav.socialmedia ul {
+    list-style: none;
+    margin: 0;
+    padding: 4rem 0 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+}
+
+nav.socialmedia a {
+    display: block;
+    width: 64px;
+    height: 60px;
+    text-indent: -99999px;
+}
+
+#facebook {
+    background: transparent url("../Images/facebook.png") no-repeat top left;
+}
+
+#twitter {
+    background: transparent url("../Images/twitter.png") no-repeat top left;
+}
+
+#instagram {
+    background: transparent url("../Images/Instagram.png") no-repeat top left;
+}
+
+
+/* . . . Meet Our Team . . . */
+h6 {
+    padding: 0;
+    margin: 0;
+    font-size: 28px;
+}
+
+div.nameandimage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.projects {
+    max-width: 1600px;
+    gap: 0.5rem;
+    padding: 0 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* . . . Job Opportunities . . . */
+div.jobdisplay {
+    background: var(--lightblue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 520px;
+    height: 700px;
+}
+
+div.jobdisplay h6 {
+    font-weight: bold;
+}
+
+div.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+div.button a {
+    background: var(--blue);
+    margin: 2rem;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+div.jobinfo {
+    max-width: 1000px;
+    max-height: 1000px;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    display: none;
+    text-align: left;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+div.jobinfo h6 {
+    text-align: center;
+}
+
+div.jobdisplay:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* . . . Application Form / Contact Us . . . */
+main form {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form input,
+main form textarea {
+    font-family: var(--bodyfont);
+    border: 1px solid black;
+    border-radius: 0.1rem;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0.3rem 1rem;
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+main form textarea {
+    height: 10rem;
+    resize: none;
+}
+
+main div.centre {
+    justify-content: center;
+}
+
+main form input[type="submit"] {
+    background: var(--blue);
+    color: white;
+    width: auto;
+    cursor: pointer;
+    padding: 1rem 3rem 1rem 3rem;
+}
+
+/* . . . Resources . . . */
+ul.courses {
+    max-width: 1600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+ul.courses a {
+    color: black;
+    text-decoration: none;
+}
+
+ul.courses a:hover {
+    text-decoration: underline;
+    color: #318ee1;
+}
+
+ul.toolsframework {
+    max-width: 1600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+div.column {
+    display: flex;
+    flex-direction: column;
+}
+
+div.column p {
+    font-weight: bold;
+}
+
+div.tutorial {
+    max-width: 1600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.tutorial iframe {
+    width: 560px;
+    height: 315px;
+}
+
+/* . . . Contact Us . . . */
+div.location {
+    max-width: 1600px;
+    width: 100%;
+}
+
+div.map {
+    max-width: 1600px;
+    width: 100%;
+    padding: 0 0 1rem 0;
+}
+
+div.map iframe {
+    width: 1600px;
+    height: 600px;
+}
+
+/* . . . Responsive Design . . . */
+@media (max-width: 1920px) {
+    div.jobinfo {
+        max-height: 900px;
+    }
+}
+
+@media (max-width: 1536px) {
+    body.home h2 {
+        font-size: 120px;
+    }
+    main form input, main form textarea {
+        max-width: 1000px;
+    }
+    div.map iframe {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1280px) {
+    body.home h2 {
+        font-size: 96px;
+    }
+    div.row, div.projects {
+        flex-direction: column;
+        align-items: center;
+    }
+    div.jobopenings h6 {
+        font-size: 24px;
+    }
+    nav.mainmenu ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1024px) {
+    body.home div.menublock {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    div.footerbar {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    main form input, main form textarea {
+        font-size: 0.9rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    nav.mainmenu ul a {
+        font-size: 0.9rem;
+    }
+    body.home h2 {
+        padding: 1rem 0 0 0;
+    }
+    body.home div.headerbar {
+        gap: 2rem;
+    }
+    div.jobinfo {
+        width: 90%;
+        max-width: 90%;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body.home h2 {
+        font-size: 72px;
+    }
+    .projects, .row {
+        gap: 2rem;
+        flex-direction: column;
+    }
+    div.tutorial iframe {
+        width: 100%;
+        height: auto;
+    }
+    nav.mainmenu ul a {
+        padding: 0.3rem 0.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    html, body {
+        font-size: 22px;
+    }
+    body.home h2 {
+        font-size: 48px;
+    }
+    footer h5 img {
+        width: 140px;
+    }
+    nav.socialmedia a {
+        width: 48px;
+        height: 48px;
+    }
+    div.jobinfo {
+        width: 95%;
+        max-width: 95%;
+        padding: 0.8rem;
+        max-height: 850px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 475px) {
+    html, body {
+        font-size: 18px;
+    }
+    body.home h2 {
+        font-size: 36px;
+        padding: 2rem 0 0 0;
+    }
+    nav.mainmenu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    div.jobopenings h6 {
+        font-size: 20px;
+    }
+    nav.socialmedia ul {
+        justify-content: center;
+    }
+}
