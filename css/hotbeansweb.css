@@ -450,6 +450,9 @@ div.map iframe {
         justify-content: center;
         flex-wrap: wrap;
     }
+    main form input, main form textarea {
+        max-width: 1000px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -481,6 +484,9 @@ div.map iframe {
         width: 90%;
         max-width: 90%;
         padding: 1rem;
+    }
+    main form input, main form textarea {
+        max-width: 800px;
     }
 }
 
