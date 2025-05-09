@@ -284,7 +284,8 @@ div.button a {
 div.jobinfo {
     max-width: 1000px;
     max-height: 1000px;
-    width: 100%;
+    hight: 90%;
+    width: 90%;
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -417,12 +418,6 @@ div.map iframe {
 }
 
 /* . . . Responsive Design . . . */
-@media (max-width: 1920px) {
-    div.jobinfo {
-        max-height: 900px;
-    }
-}
-
 @media (max-width: 1536px) {
     body.home h2 {
         font-size: 120px;
@@ -480,11 +475,6 @@ div.map iframe {
     body.home div.headerbar {
         gap: 2rem;
     }
-    div.jobinfo {
-        width: 90%;
-        max-width: 90%;
-        padding: 1rem;
-    }
     main form input, main form textarea {
         max-width: 800px;
     }
@@ -520,13 +510,6 @@ div.map iframe {
     nav.socialmedia a {
         width: 48px;
         height: 48px;
-    }
-    div.jobinfo {
-        width: 95%;
-        max-width: 95%;
-        padding: 0.8rem;
-        max-height: 850px;
-        font-size: 0.9rem;
     }
 }
 
